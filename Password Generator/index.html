@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://kit.fontawesome.com/d3647c2192.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <form action="" name="passGen">
+            <div class="result-container">
+                <input type="text" size="18" name="output" class="out" id="result" disabled>
+            </div>
+            <input type="button" value="Generate Password" class="btn btn-success btn-block myBtn"
+                onclick="populateForm(this.form.length.value)"><br>
+            <div class="setting">
+                <div><strong class="pass">Password Length: </strong></div>
+                <div><input type="text" name="length" size="3" value="0" class="inpt"></div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
